@@ -1,0 +1,198 @@
+$main-font:'Poppins', sans-serif;
+$primary:hsl(259, 100%, 65%);
+$primary-2:hsl(0, 100%, 67%);
+$white:hsl(0, 0%, 100%);
+$off-white: hsl(0, 0%, 94%);
+$light-grey:hsl(0, 0%, 86%);
+$smokey-grey: hsl(0, 1%, 44%);
+$Off-black: hsl(0, 0%, 8%);
+
+
+
+*
+{
+    margin:0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;;
+
+
+
+}
+body
+{
+    background-color: $light-grey;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
+
+}
+.container-1
+{
+
+    width: 650px;
+    border-bottom-right-radius: 80px;
+    padding-left: 50px;
+    padding-top: 20px;
+    background-color: $white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+.Input-div
+{
+    display: flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    gap: 4rem
+
+    ;
+    
+
+
+}
+input
+{
+    width: 100px;
+    height: 48px;
+    font-size: 18px;
+    font-weight: 800;
+    
+    border: 1px solid $light-grey;
+    padding: 20px;
+    cursor: pointer;
+    
+    border-radius: 5px;
+}
+.Input-div-1
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    
+    
+}
+button
+{
+    margin-top: 2rem;
+    border-radius: 50%;
+    border: none;
+    background-color: $primary;
+    height: 60px;
+    width: 60px;
+
+}
+.Text
+{
+    color:$light-grey;
+    font-weight: 400;
+    font-size: 12px;
+}
+hr
+{
+    margin-top: 40px;
+    color: $light-grey;
+    width: 510px;
+    height:0.1px;
+    justify-content: center;
+}
+.container-2
+{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+   
+    
+}
+.Output
+{
+    font-size: 85px;
+    font-style: italic;
+    
+    
+
+
+}
+.span1
+{
+    color:$primary;
+
+}
+.Padding-div
+{
+    padding-bottom: 1rem;
+}
+.flex-box
+{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    gap: 2px;
+}
+img
+{
+    height:20px;
+    width: 20px;
+}
+input:active
+{
+    border-color: $primary;
+}
+button:active
+{
+    background-color: black;
+    transition: 0.1s ease-in;
+    cursor: pointer;
+    height: 58px;
+    width: 58px;
+    border: none;
+    transform: translate(-360deg);
+}
+
+@media screen and (max-width:600px){
+    .container-1 {
+        width: 350px;
+        padding-left: 5px;
+
+    }
+    .container-2
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: inherit;
+        align-items: center;
+    }
+    .container-2 button {
+        margin-top: 0rem; /* Pushes the button to the center */
+      
+       
+        height: 50px;
+        width: 50px;
+    }
+    .Input-div
+    {
+        gap: 1rem;
+
+    }
+    .Output
+    {
+        font-size: 55px;
+    }
+    .flex-box
+    {
+        padding-top: 7rem;
+    }
+    hr
+    {
+        width: 320px;
+      
+        
+    }
+    input
+    {
+        border: 1px solid $light-grey;
+        
+    }
+}
